@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/zloirock/core-js#readme"
-
-    >core-js (v2.4.1)</a>
+    <a href="https://github.com/zloirock/core-js#readme">core-js (v2.4.1)</a>
 </h1>
 <h4>Standard library</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.core-js">module core-js</a><ol>
 
@@ -799,7 +792,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIterator = function (it){
   var iterFn = get(it);
-  if(typeof iterFn != &#x27;function&#x27;)throw TypeError(it + &#x27; is not iterable!&#x27;);
+  if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
   return anObject(iterFn.call(it));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -816,7 +809,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIteratorMethod = function (it){
   if(it != undefined)return it[ITERATOR]
-    || it[&#x27;@@iterator&#x27;]
+    || it['@@iterator']
     || Iterators[classof(it)];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -849,7 +842,7 @@
     <li>description and source-code<pre class="apidocCodePre">isIterable = function (it){
   var O = Object(it);
   return O[ITERATOR] !== undefined
-    || &#x27;@@iterator&#x27; in O
+    || '@@iterator' in O
     || Iterators.hasOwnProperty(classof(O));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1679,3 +1672,4 @@
     ]
 </div>
 </div>
+</body></html>
